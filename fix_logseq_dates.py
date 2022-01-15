@@ -22,8 +22,7 @@ def find_dates(line, any_date):
     date_strings = []
     for reference in matched_references:
         date_pattern = (
-            r"((?:\d{1,2}\s)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|"
-            r"Nov|Dec)[a-z]*(?:-|\.|\s|,)\s?\d{1,2}[a-z]*(?:-|,|\s)?\s?\d{2,4})"
+            r"\[\[(\d{4}-\d{2}-\d{2} (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday))\]\]"
         )
         matched_dates = regex.findall(date_pattern, reference)
         for date in matched_dates:
