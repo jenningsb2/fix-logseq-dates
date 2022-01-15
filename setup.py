@@ -15,12 +15,12 @@ def get_long_description() -> str:
 
 
 setup(
-    name="fix-logseq-dates",
+    name="fix-logseq-dates-2",
     version="2021.10.21",
-    url="https://github.com/idadzie/fix-logseq-dates",
+    url="https://github.com/jenningsb2/fix-logseq-dates",
     license="MIT",
-    author="Isaac Dadzie",
-    author_email="hello@idadzie.dev",
+    author="Bailey Jennings",
+    author_email="jenningsebailey@gmail.com",
     description="CLI tool to fix linked references for dates.",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
